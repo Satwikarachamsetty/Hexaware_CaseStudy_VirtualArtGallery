@@ -16,14 +16,7 @@ class TestGalleryServiceModule(unittest.TestCase):
         OpeningHours = '9:00 AM - 6:30 PM'
         gallery = Gallery(GalleryID, Name, Description, Location, Curator, OpeningHours)
         created_gallery_id = self.gallery_service.addGallery(gallery)
-        self.assertIsNotNone(created_gallery_id)
-
-
-    # def test_get_gallery_by_id(self):
-    #     gallery = self.gallery_service.getGalleryById(self.test_gallery_id)
-    #     self.assertIsNotNone(gallery)
-    #     self.assertEqual(gallery[2], "Initial Gallery")
-    
+        self.assertIsNotNone(created_gallery_id)    
 
     def test_update_gallery(self):
         u_GalleryID = 4
